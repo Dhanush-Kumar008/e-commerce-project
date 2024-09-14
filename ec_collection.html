@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="ec_collection.css">
+    <link rel="stylesheet" href="ec_home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <div class="navbar_link">
+            <p><a href="ec_home.html">Home</a></p>
+            <p><a href="ec_collection.html" >Collection</a></p>
+            <p><a id="contactid" >Contact</a></p>
+        </div>
+
+        <div class="navbar_toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    
+    <div class="side_navbar">
+        <p class="cross_symbol" onclick="closenavbar()">
+            <i class="fa-solid fa-x"></i>
+        </p>
+
+        <div class="side_navbar_link">
+            <p  class="side_navbar_home"><a href="ec_home.html">Home</a></p>
+            <p  class="side_navbar_collection"><a href="ec_collection.html">Collection</a></p>
+            <p  class="side_navbar_collection"><a id="contactid2">Contact</a></p>
+        </div>
+    </div>
+
+   
+
+    <div class="searchdiv">
+        <form class="searchform">
+            <input type="text" id="searchinp" onkeyup="searchfuntion()" placeholder="Search here....">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+    </div>
+
+        <div class="product">
+            <div class="product_box">
+                <img src="whiteshirt1.webp" style="height: 200px; width: 200px;">
+                <p>White Shirt</p>
+            </div>
+            <div class="product_box"> 
+                <img src="whiteshirt2.webp" style="height: 200px; width: 200px;">
+                <p>White Shirt</p>
+            </div>
+            <div class="product_box">
+                <img src="blackshirt1.webp" style="height: 200px; width: 200px;">
+                <p>Black shirt</p>
+            </div>
+            <div class="product_box">
+                <img src="be7d7322a2797b080b896df49d23809a.jpg" style="height: 200px; width: 200px;">
+                <p>Black Shirt</p>
+            </div>
+            <div class="product_box">
+                <img src="pinkshirt1.webp" style="height: 200px; width: 200px;">
+                <p>Pink Shirt</p>
+            </div>
+            <div class="product_box">
+                <img src="pinkshirt2.webp" style="height: 200px; width: 200px;">
+                <p>Pink Shirt</p>
+            </div>
+            <div class="product_box">
+                <img src="redshirt1.jpeg" style="height: 200px; width: 200px;">
+                <p>Red Shirt</p>
+            </div>
+            <div class="product_box">
+                <img src="redshirt2.webp" style="height: 200px; width: 200px;">
+                <p>Red Shirt</p>
+            </div>
+        </div>
+       
+
+     <!--popcode-->
+     <div class="overlay"></div>
+
+     <!--loginpop-->
+     <div class="poplogin">
+         <div class="popdetail">
+             <div id="popx" onclick="closepopup()">
+                 <i class="fa-solid fa-x"></i>
+             </div>
+             <h2>Contact Us</h2>
+             <p>Name :</p>
+             <input type="text" name="" id="popin1">
+             <p>Email :</p>
+             <input type="email" name="" id="popin2">
+             <P>Message :</P>
+             <textarea id="popin3"></textarea>
+         </div>
+         <button onclick="submitfunction()" id="popbutton">Submit</button>
+     </div>
+
+<script src="ec_collection.js"></script>
+<script src="ec_home.js"></script>
+</body>
+</html>
